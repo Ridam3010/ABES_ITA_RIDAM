@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav style="height: 60px;background-color: burlywood;display:flex;">
+        <img src="image.png" style="width: 40px; height: 40px;border-radius: 20px;">
+        <h1 align="center">Sheet Book</h1>
+    </nav>
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <th><h1>*Welcome to Bus Booking System*</h1></th>
+                </tr>
+                <tr>
+                    <th>User Details</th>
+                </tr>
+                <tr>
+                    <td><label>User Name</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <br><br>
+                <tr>
+                    <td rowspan="2"><label >Gender</label></td>
+                    <td><input type="radio" name="Male" value="Male">
+            <label>Male</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="Female" value="Female">
+            <label>Female</label></td>
+                </tr>
+            <br><br>
+            <tr>
+                <td><label>User Select city</label></td>
+                <td>
+                    <select name="Select city" id="">
+                        <option>Lucknow</option>
+                        <option value="">Varansi</option>
+                        <option value="">Gorakhpur</option>
+                        <option value="">Ghaziabad</option>
+                    </select>
+                </td>
+            </tr>
+            <br><br>
+            <tr>
+                <td rowspan="2"><label for="">Select Your seat</label></td>
+                <td><input type="radio">
+                <label for="">AC</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio">
+                    <label for="">Non-AC</label>
+                </td>
+            </tr>
+            <br><br>
+            </table>
+            <button>Book seat</button>
+        </form>
+    </div>
+</body>
+</html>
