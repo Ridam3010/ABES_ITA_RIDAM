@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react'
+import Fashion from './Component/Fashion.jsx';
 import './App.css';
-import Link1 from './Component/Link1';
 function App() {
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    fetch('https://fakestoreapi.com/products')
+      .then(res => res.json())
+      .then(data => {
+        setBooks(data);
+      });
+  }, []);
 
   return (
-    <div>
-    <Link1/>
+    <div id="adi">
+      {books.map((b, i) => (
+        <Fashion key={i} props={b} />
+      ))}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
